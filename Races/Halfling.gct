@@ -1,0 +1,294 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "0abdcb52-6104-47ce-94ca-8c8784076f4a",
+	"traits": [
+		{
+			"id": "5183d23f-f6d9-428c-b81a-dcfa67024021",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "93d5f7b7-7dbb-4bf4-a302-d0baeba75dbd",
+					"type": "trait",
+					"name": "Decreased Basic Move",
+					"reference": "DFA11",
+					"tags": [
+						"Attribute",
+						"Disadvantage",
+						"Mental"
+					],
+					"levels": 1,
+					"points_per_level": -5,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "basic_move",
+							"amount": -1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "3fd0d52a-dc0e-4fd5-b922-96ab0c6e312a",
+					"type": "trait",
+					"name": "Decreased Strength",
+					"reference": "DFA8",
+					"tags": [
+						"Attribute",
+						"Disadvantage",
+						"Physical"
+					],
+					"levels": 1,
+					"points_per_level": -10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "st",
+							"amount": -1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "26cf3591-445a-4f8c-85a1-6eba3ace4e66",
+					"type": "trait",
+					"name": "Feature: Hairy Feet",
+					"tags": [
+						"Physical"
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "2b5f2a92-f275-44d0-b642-614c8f6e2845",
+					"type": "trait",
+					"name": "Gluttony",
+					"reference": "DFA60",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"base_points": -5,
+					"cr": 12,
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "ceb0eb1a-5277-4b70-8192-6a05d63b2b7a",
+					"type": "trait",
+					"name": "Halfing's Luck",
+					"notes": "'Tempt Fate' reroll cost 1 fate point instead of 2",
+					"base_points": 10,
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "e24d537f-4142-4228-aeff-79054c8490de",
+					"type": "trait",
+					"name": "Increased Dexterity",
+					"reference": "DFA8",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Physical"
+					],
+					"levels": 1,
+					"points_per_level": 20,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "dx",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 20
+					}
+				}
+			],
+			"name": "Halfling",
+			"reference": "DFA45",
+			"ancestry": "Human",
+			"container_type": "ancestry",
+			"calc": {
+				"points": 10
+			}
+		},
+		{
+			"id": "50d9cb67-8d0c-4ad1-86a0-2e5260fb460c",
+			"type": "trait",
+			"name": "Talent (@Medium@)",
+			"reference": "B89",
+			"tags": [
+				"Advantage",
+				"Mental",
+				"Talent"
+			],
+			"modifiers": [
+				{
+					"id": "190a8e07-518d-4571-bce8-707bdee6e956",
+					"type": "modifier",
+					"name": "Alternate Benefit",
+					"notes": "@Alternate Benefit@",
+					"disabled": true
+				},
+				{
+					"id": "45a9ce16-d103-41ce-8291-40ac1b0ac334",
+					"type": "modifier",
+					"name": "Alternative Cost",
+					"affects": "levels_only",
+					"cost_type": "points",
+					"disabled": true
+				}
+			],
+			"levels": 1,
+			"points_per_level": 10,
+			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "@skill01@"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "@skill02@"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "@skill03@"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "@skill04@"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "@skill05@"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "@skill06@"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "@skill07@"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "@skill08@"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "@skill09@"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "@skill10@"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "@skill11@"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "@skill12@"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "reaction_bonus",
+					"situation": "@reaction bonus situation@",
+					"amount": 1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": 10
+			}
+		}
+	]
+}
